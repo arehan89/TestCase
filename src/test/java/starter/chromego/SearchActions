@@ -1,0 +1,7 @@
+import net.serenitybdd.core.steps.UIInteractions;
+
+public class SearchActions extends UIInteractions {
+   public void byKeyword(String keyword) {
+      $("#searchbox_input").sendKeys(keyword, Keys.ENTER);
+    }
+}
